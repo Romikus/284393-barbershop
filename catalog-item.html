@@ -12,11 +12,11 @@
         <a href="#"><img src="img/logo.png" alt="Barbershop logo"></a>
         <nav>
           <ul class="main-menu">
-            <li><a href="#">ИНФОРМАЦИЯ</a></li>
-            <li><a href="#">НОВОСТИ</a></li>
-            <li><a href="#">РАЙС-ЛИСТ</a></li>
-            <li><a href="#">МАГАЗИН</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
+            <li><a href="#">информация</a></li>
+            <li><a href="#">новости</a></li>
+            <li><a href="#">прайс-лист</a></li>
+            <li><a href="#">магазин</a></li>
+            <li><a href="#">контакты</a></li>
           </ul>
         </nav>
         <div class="user-block">
@@ -24,64 +24,62 @@
         </div>
       </div>
     </header>
-    
-    
-    <main class="container">
+    <div class="container">
       <div class="heading">
-        <h1>НАБОР ДЛЯ ПУТЕШЕСТВИЙ «BAXTER OF CALIFORNIA»</h1>
-        <ul>
-          <li><a href="#">ГЛАВНАЯ</a></li>
-          <li><a href="#">МАГАЗИН</a></li>
-          <li><a href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
-          <li>НАБОР ДЛЯ ПУТЕШЕСТВИЙ «BAXTER OF CALIFORNIA»</li>
+        <h1>Набор для путешествий «BAXTER OF CALIFORNIA»</h1>
+        <ul class="breadcrumbs">
+          <li><a href="#">главная</a></li>
+          <li><a href="#">магазин</a></li>
+          <li><a href="#">средства для ухода</a></li>
+          <li>набор для путешествий «BAXTER OF CALIFORNIA»</li>
         </ul>
       </div>
-      <figure>
-        <img src="img/travel_kit_1" width="" height="" alt="Travel kit">
-        <img src="img/travel_kit_2" width="" height="" alt="Travel kit">
-        <img src="img/travel_kit_3" width="" height="" alt="Travel kit">
-        <img src="img/travel_kit_4" width="" height="" alt="Travel kit">
-      </figure>
+      <div class="product-image">
+        <figure>
+          <img src="img/travel_kit_1" alt="Travel kit">
+          <img src="img/travel_kit_2" alt="Travel kit">
+          <img src="img/travel_kit_3" alt="Travel kit">
+          <img src="img/travel_kit_4" alt="Travel kit">
+        </figure>
+      </div>
       <section class="content">
-        <div>
-          <p>ЕСТЬ В НАЛИЧИИ</p>
-          <p class="v-code">АРТИКУЛ: DEXTER-AE</p>
-          <p class="desc">
-            Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
-          </p>
+        <div class="product-info">
+          <span>есть в наличии</span>
+          <span class="v-code">артикул: DEXTER-AE</span>
         </div>
-        <div>
-          <span class="product-price">2 900 РУБ.</span>
-          <button class="product-buy" type="button">КУПИТЬ</button>
+        <p>
+          Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+        </p>
+        <div class="product-price">               <!-- тот же класс, что и в catalog.html -->
+          <span>2 900 руб.</span>
+          <a href="#">купить</a>
         </div>
-        <div>
-          <h1>В НАБОР ВХОДЯТ:</h1>
-          <ul class="features">
-            <li>СРЕДСТВО ДЛЯ УМЫВАНИЯ (50 МЛ)</li>
-            <li>УВЛАЖНЯЮЩИЙ КРЕМ (50 МЛ)</li>
-            <li>КРЕМ ДЛЯ БРИТЬЯ (50 МЛ)</li>
-            <li>КРЕМ ПОСЛЕ БРИТЬЯ, ШАМПУНЬ (50 МЛ)</li>
-            <li>УДОБНАЯ КОЖАНАЯ КОСМЕТИЧКА</li>
-          </ul>
-        </div>
+        <h2>в набор входят:</h2>
+        <ul>
+          <li>средство для умывания (50 мл)</li>
+          <li>увлажняющий крем (50 мл)</li>
+          <li>крем для бритья (50 мл)</li>
+          <li>крем после бритья, шампунь (50 мл)</li>
+          <li>удобная кожаная косметичка</li>
+        </ul>
       </section>
-    </main>
+    </div>
     <footer>
       <div class="container">
         <div class="contacts">
-          <p>БАРБЕРШОП «БОРОДИНСКИЙ»</p>
-          <p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
-          <p><a href="#">КАК НАС НАЙТИ?</a></p>
-          <p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+          <p>Барбершоп «Бородинский»</p>
+          <p>Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p><a href="#">Как нас найти?</a></p>
+          <p>Телефон: +7 (495) 666-02-66</p>
         </div>
         <div class="socials">
-          <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+          <p>Давайте дружить!</p>
           <a href="http://vk.com/" class="socials-icon vk"><span>вконтакте</span></a>      <!-- для span display: none -->
           <a href="http://facebook.com/" class="socials-icon facebook"><span>facebook</span></a>
           <a href="http://instagram.com/" class="socials-icon instagram"><span>instagram</span></a>
         </div>
         <div class="designed">
-          <p>РАЗРАБОТАНО:</p>
+          <p>Разработано:</p>
           <a href="#">HTMLACADEMY.RU</a>
         </div>
       </div>
