@@ -1,0 +1,21 @@
+body {
+  font-size: 14px;
+  line-height: 1.5;                /* непонятно, зачем это свойство указывать здесь */
+  font-weight: bold;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;  /* обязательно шрифты указывать в кавычках? */
+  text-transform: uppercase;
+  color: bold;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.filter-item h3 {
+  font-size: 24px;
+}
+
