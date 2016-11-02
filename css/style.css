@@ -1,14 +1,19 @@
 body {
+  margin: 0;
+  
   font-size: 14px;
-  line-height: 1.5;                /* непонятно, зачем это свойство указывать здесь */
+  line-height: 1.5;
   font-weight: bold;
   font-family: "PT Sans Narrow", "Arial", sans-serif;  /* обязательно шрифты указывать в кавычках? */
   text-transform: uppercase;
+  
   color: bold;
+  background-color: #f8f5f2;
 }
 
 h1 {
   font-size: 30px;
+  line-height: 42px;
 }
 
 h2 {
@@ -17,5 +22,226 @@ h2 {
 
 .filter-item h3 {
   font-size: 24px;
+  line-height: 30px;
 }
 
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  
+  outline: 2px solid crimson;    /* для разметки сетки */
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  background-color: #000;
+  margin-bottom: 54px;
+  font-size: 16px;
+  
+  outline: 2px solid orange;    /* для разметки сетки */
+}
+
+.logo {
+  float: left;
+  height: 24px;        /* странно, но если внутрь тега <a> поместить <img> высота блока становиться на 6px больше? */
+  padding: 24px 20px;
+  
+  /*background-color: burlywood;*/
+}
+
+.logo > img {
+  width: 111px;
+  height: 24px;
+}
+
+nav {
+  float: left;
+  
+  /*background-color: aquamarine;*/
+}
+
+.main-menu {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.main-menu > li {
+  float: left;
+  /*margin: 0 20px;*/
+  
+  /*background-color: cornflowerblue;*/
+}
+
+.main-menu a {
+  /*background-color: azure;*/
+  display: block;            /* нужно, чтобы ссылкой был не только текст, а весть блок */
+  padding: 24px 20px;
+  
+  text-decoration: none;
+  color: #fff;
+  /*
+  box-shadow: inset 20px 0 0 0 #000,
+              inset -20px 0 0 0 #000,
+              inset 0 -4px 0 0 #fff; */
+}
+
+.active {
+  box-shadow: inset 20px 0 0 0 #000,
+              inset -20px 0 0 0 #000,
+              inset 0 -4px 0 0 #fff;
+}
+
+.user-block {
+  float: right;
+  
+  /*background-color: beige;*/
+}
+
+.user-block a {
+  display: block;            /* нужно, чтобы ссылкой был не только текст, а весть блок */
+  padding: 24px 20px;
+  
+  /*line-height: 20px;*/
+  /*vertical-align: middle;*/
+  
+  text-decoration: none;
+  color: #fff;
+  /*background-color: cadetblue;*/
+}
+
+.logo:hover,
+.logo:focus,
+.main-menu a:hover,
+.main-menu a:focus,
+.user-block a:hover,
+.user-block a:focus {
+  background: #242424;
+}
+
+.heading {
+  margin-bottom: 60px;
+  
+  outline: 2px solid green;    /* для разметки сетки */
+}
+
+aside {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+  
+  outline: 2px solid green;    /* для разметки сетки */
+}
+
+.filter-item h3 {
+  margin: 0;
+}
+
+.box-catalog { 
+  margin-left: 240px;
+  padding-top: 5px;              /* выравнивает левую и правую колону по уровню */
+  
+  background-color: burlywood; /* для разметки сетки */
+  outline: 2px solid green;    /* для разметки сетки */
+}
+
+.catalog {
+  margin-bottom: 45px;
+}
+
+.catalog-item {
+  float: left;
+  width: 220px;
+  height: 286px;
+  margin-right: 20px;
+  
+  outline: 2px solid blue;    /* для разметки сетки */
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.paginator {
+  outline: 2px solid blue;    /* для разметки сетки */
+}
+
+.paginator > a {
+  display: block;
+  float: left;
+  min-width: 43px;
+  height: 43px;
+  margin-right: 7px;
+  
+  line-height: 43px;
+  text-align: center;
+  text-decoration: none;
+  
+  color: #fff;
+  background: #000;
+}
+
+.paginator > .current {
+  color: #000;
+  background: #fff;
+}
+
+.product-image {
+  float: left;
+  width: 470px;    /* 460 - ширина большой картинки + 10px */
+  
+  outline: 2px solid green;    /* для разметки сетки */
+}
+
+.product-image > figure {
+  margin: 0;
+  
+  outline: 2px solid blue;    /* для разметки сетки */
+}
+
+.content {
+  margin-left: 550px;
+  
+  outline: 2px solid green;    /* для разметки сетки */
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 55px;
+  padding-bottom: 35px;
+  
+  background-color: darkseagreen; /* для разметки сетки */
+  outline: 2px solid orange;      /* для разметки сетки */
+}
+
+footer .contacts,
+footer .socials {
+  float: left;
+  
+  outline: 2px solid green;    /* для разметки сетки */
+}
+
+footer .designed {
+  float: right;
+  
+  outline: 2px solid green;    /* для разметки сетки */
+}
+
+footer .contacts {
+  width: 380px;
+  margin-right: 20px;
+}
+
+footer .socials {
+  width: 140px;
+  
+  text-align: center;
+}
