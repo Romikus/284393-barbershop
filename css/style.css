@@ -7,7 +7,7 @@ body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;  /* обязательно шрифты указывать в кавычках? */
   text-transform: uppercase;
   
-  color: bold;
+  color: #000;
   background-color: #f8f5f2;
 }
 
@@ -43,20 +43,22 @@ h2 {
 header {
   background-color: #000;
   margin-bottom: 54px;
+  
   font-size: 16px;
+  line-height: 20px;
   
   outline: 2px solid orange;    /* для разметки сетки */
 }
 
 .logo {
   float: left;
-  height: 24px;        /* странно, но если внутрь тега <a> поместить <img> высота блока становиться на 6px больше? */
   padding: 24px 20px;
   
   /*background-color: burlywood;*/
 }
 
-.logo > img {
+.logo img {
+  display: block;
   width: 111px;
   height: 24px;
 }
@@ -84,7 +86,7 @@ nav {
 .main-menu a {
   /*background-color: azure;*/
   display: block;            /* нужно, чтобы ссылкой был не только текст, а весть блок */
-  padding: 24px 20px;
+  padding: 26px 20px;
   
   text-decoration: none;
   color: #fff;
@@ -189,7 +191,7 @@ aside {
   background: #000;
 }
 
-.paginator > .current {
+.paginator .current {
   color: #000;
   background: #fff;
 }
@@ -201,7 +203,7 @@ aside {
   outline: 2px solid green;    /* для разметки сетки */
 }
 
-.product-image > figure {
+.product-image figure {
   margin: 0;
   
   outline: 2px solid blue;    /* для разметки сетки */
